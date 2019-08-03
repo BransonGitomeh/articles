@@ -1,35 +1,32 @@
-<style>
-    .sticky-sidebar {
-        position: -webkit-sticky;
-        /* Safari */
-        position: sticky;
-        top: 0;
-    }
-
-    .sticky-sidebar-2 {
-        position: -webkit-sticky;
-        /* Safari */
-        position: sticky;
-        top: 10;
-    }
-</style>
-
 <div class="main-content">
     <div class="row">
         <div class="col-lg-9">
             {{> content}}
+
+            <div class="row justify-content-center">
+                <div class="col-md-9">
+                    {{> comments}}
+                    {{> other}}
+                    
+                </div>
+            </div>
+            {{> footer}}
         </div>
 
         <div class="col-lg-3">
-           
-                <section class="slice slice-lg sticky" data-offset-top="#header-main" style="padding-top: 50px;">
-                    {{> ads/square}}
-                </section>
 
-                {{!-- <section class="sticky-sidebar-2" style="margin-top: 200px">
+            <div class="container pt-6">
+                <div class="row justify-content-center">
+                    <div class="col-md-12">
+                        {{> ads/square}}
+                    </div>
+                </div>
+            </div>
+
+            {{!-- <section class="sticky-sidebar-2" style="margin-top: 200px">
                     {{> ads/square}}
                 </section> --}}
-           
+
 
             {{!-- <section style="margin-top: 500px">
                 {{> ads/square}}
@@ -40,5 +37,4 @@
             </section> --}}
         </div>
     </div>
-    {{> other}}
 </div>

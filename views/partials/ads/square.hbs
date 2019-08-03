@@ -1,15 +1,19 @@
 <style>
-    .square {
-        background-color: rgb(0, 0, 0); 
-        min-height: 600px; 
-        min-width: 250px; 
-        position: absolute; 
-        display: flex; 
-        justify-content: center; 
+    div.square {
+        /* Safari */
+        position: fixed;
+        z-index: 20;
+        max-width: 100%;
+
+        background-color: rgb(0, 0, 0);
+        min-height: 600px;
+        min-width: 300px;
+        display: flex;
+        justify-content: center;
         align-items: center;
     }
 </style>
 
-<div class="square">
+<div class="square hidden-md-down" style="">
     <p style="color: rgb(255, 255, 255);">AD</p>
 </div>
