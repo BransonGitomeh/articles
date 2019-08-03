@@ -1,3 +1,12 @@
+<style>
+    .sticky-sidebar {
+        position: -webkit-sticky;
+        /* Safari */
+        position: sticky;
+        top: 0;
+    }
+</style>
+
 <div class="main-content">
     <div class="row">
         <div class="col-lg-9">
@@ -5,8 +14,8 @@
         </div>
 
         <div class="col-lg-3">
-            <div data-spy="affix">
-                <section class="slice slice-lg" data-offset-top="#header-main" style="padding-top: 147.188px;">
+            <div class="sticky-sidebar">
+                <section class="slice slice-lg" data-offset-top="#header-main" style="padding-top: 90px;">
                     {{> ads/square}}
                 </section>
 
