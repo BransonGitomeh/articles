@@ -31,15 +31,15 @@ app.use(minifyHTML({
 
 app.use(morgan('tiny'))
 
-// app.get('/index.html', function(req, res) {
-// 	res.render('home');
-// });
+app.get('/index.html', function(req, res) {
+	res.render('home');
+});
 
 app.get('/foo.html', function(req, res) {
 	res.render('foo');
 });
 
-app.use(express.static('output'))
+app.use(express.static('public'))
 
 app.listen(3000, function(error) {
 	console.log("server started at 3000")
