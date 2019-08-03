@@ -5,6 +5,13 @@
         position: sticky;
         top: 0;
     }
+
+    .sticky-sidebar-2 {
+        position: -webkit-sticky;
+        /* Safari */
+        position: sticky;
+        top: 10;
+    }
 </style>
 
 <div class="main-content">
@@ -15,13 +22,13 @@
 
         <div class="col-lg-3">
            
-                <section class="slice slice-lg sticky-sidebar" data-offset-top="#header-main" style="padding-top: 90px;">
+                <section class="slice slice-lg sticky" data-offset-top="#header-main" style="padding-top: 50px;">
                     {{> ads/square}}
                 </section>
 
-                <section class="sticky-sidebar" style="margin-top: 200px">
+                {{!-- <section class="sticky-sidebar-2" style="margin-top: 200px">
                     {{> ads/square}}
-                </section>
+                </section> --}}
            
 
             {{!-- <section style="margin-top: 500px">
