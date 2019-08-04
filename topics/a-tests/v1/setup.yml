@@ -1,0 +1,22 @@
+title: "test"
+name: "test"
+content: "test"
+canonical: "www.test.com" # main site is?
+robots:
+  folow: true
+  index: true
+social_media:
+  open_graph:
+    type: "article"
+    title: "test"
+    description: "test"
+    image_url: "test"
+    url: "test"
+    site_name: "test"
+  twitter:
+    title: "test"
+    description: "test"
+    image_url: "test"
+    url: "test"
+    site_name: "test"
+    creator: "test"
